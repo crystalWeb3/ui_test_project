@@ -1,0 +1,112 @@
+/* Sidebar */
+.sidebar {
+    
+    background-color: #00072b;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+    border-radius: 20px;
+    height: calc(100% - 25px);
+    /* position: fixed; */
+    
+  }
+
+    
+  .sidebar-container {
+    padding: 10px;
+    /* min-height: 100%; */
+    height: 100vh;
+    position: relative;
+    background-color: white;
+  }
+
+
+
+  
+  .sidebar-header {    
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+    align-items: center;
+  }
+  .beta{
+    font-size: 20px;
+    font-weight: 100 !important;
+    /* line-height: 1; */
+    vertical-align: top;
+  }
+  
+  .sidebar-menu li {
+    margin: 5px 0;
+    /* display: flex; */
+    /* align-items: center; */
+  }
+  
+  .sidebar-menu a {
+    text-decoration: none;
+    color: #fff;
+    /* font-size: 18px; */
+    display: block;
+    padding: 10px;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    margin: 0;
+  }
+  
+  .sidebar-menu a:hover {
+    background: linear-gradient(to left,  #652ee9, #c75afe);
+    border-radius: 10px;
+  }
+
+  .sidebar-menu a.active {    
+    border-radius: 10px;
+    background: linear-gradient(to left,  #652ee9, #c75afe);
+  }
+  
+  .sidebar-footer {
+    margin-top: auto;
+  }
+  
+  .membership-btn {
+    background: linear-gradient(135deg, #6c63ff 0%, #8963ff 100%);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+  }
+  
+  .membership-btn:hover {
+    background-color: #5755d9;
+  }
+  
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-links li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-links a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 16px;
+  }
+  
+  .sidebar-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  

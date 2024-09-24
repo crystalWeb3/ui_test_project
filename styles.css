@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -26,116 +28,7 @@
     padding: 0;
 
   }
-  
-  .sidebar-container {
-    padding: 10px;
-    /* min-height: 100%; */
-    height: 100vh;
-    position: relative;
-    background-color: white;
-  }
 
-  /* Sidebar */
-  .sidebar {
-    
-    background-color: #00072b;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s ease;
-    border-radius: 20px;
-    height: calc(100% - 25px);
-    /* position: fixed; */
-    
-  }
-
-
-  
-  .sidebar-header {    
-    margin-bottom: 30px;
-    font-size: 24px;
-  }
-  
-  .sidebar-menu {
-    list-style: none;
-    padding: 0;
-    flex-grow: 1;
-    align-items: center;
-  }
-  .beta{
-    font-size: 20px;
-    font-weight: 100 !important;
-    /* line-height: 1; */
-    vertical-align: top;
-  }
-  
-  .sidebar-menu li {
-    margin: 5px 0;
-    /* display: flex; */
-    /* align-items: center; */
-  }
-  
-  .sidebar-menu a {
-    text-decoration: none;
-    color: #fff;
-    /* font-size: 18px; */
-    display: block;
-    padding: 10px;
-    transition: 0.3s ease;
-    border-radius: 10px;
-    margin: 0;
-  }
-  
-  .sidebar-menu a:hover {
-    background: linear-gradient(to left,  #652ee9, #c75afe);
-    border-radius: 10px;
-  }
-
-  .sidebar-menu a.active {    
-    border-radius: 10px;
-    background: linear-gradient(to left,  #652ee9, #c75afe);
-  }
-  
-  .sidebar-footer {
-    margin-top: auto;
-  }
-  
-  .membership-btn {
-    background: linear-gradient(135deg, #6c63ff 0%, #8963ff 100%);
-    color: white;
-    width: 100%;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    transition: 0.3s ease;
-  }
-  
-  .membership-btn:hover {
-    background-color: #5755d9;
-  }
-  
-  .sidebar-links {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar-links li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar-links a {
-    text-decoration: none;
-    color: #aaa;
-    font-size: 16px;
-  }
-  
-  .sidebar-links a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
   
   /* Main Content */
   .main-content {   
@@ -153,14 +46,6 @@
     padding-bottom: 20px;
     
     
-  }
-  
-  .icon-btn {
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 50%;
-    margin-right: 10px;
-    color: #333;
   }
   
   .header-left{
@@ -185,7 +70,6 @@
     background: linear-gradient(135deg, #5144a3 0%, #6854d4 100%);
   }
   
-  /* Search Container */
  
   .page-title {
     font-size: 32px;
@@ -197,78 +81,7 @@
     color: #6c63ff;
   }
   
-  .search-bar {
-    display: flex;
-    align-items: center;
-    position: relative;
-    color: #979797;
-    width: 500px;
-        /* border-radius: 20px; */
-  }
-  
-  .search-bar input {
-    width: 100%;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #f8f8f8;
-    border-radius: 20px;
-    border: #f5f5f5 solid 1px;            
-    outline: none;
-  }  
-
-  .search-bar input:active {
-    outline: none;
-  }  
-
-  /* tags */
-  .tags {
     
-    margin-bottom: 20px;
-  }
-  
-  .tag-btn {
-    /* background-color: #f1f1f1; */
-    background-color: white;
-    color: #333;
-    padding: 10px 20px;
-    margin: 3px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    border: 1px #cacaca solid;
-    display: inline-block;
-    border-radius: 20px;
-  }
-  
-  .tag-btn.active {
-    background-color: #6c63ff;
-    color: #fff;
-  }
-  
-  .tag-btn:hover {
-    background-color: #ddd;
-  }
-  
-  /* Card Grid */
-  
-  .card {
-    background-color: white;
-    padding: 10px;
-    
-    border-radius: 30px;
-    height: 300px;
-    margin: 5px;
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
   /* Footer */
   .footer {
     display: flex;
@@ -294,121 +107,15 @@
     text-align: right;
   }
   
-
+/* modify layout */
   .h-row{
     display: flex;
-  }
-
-  .btn-search {
-    position: absolute;
-    right: 10px;    
+    margin-left: -15px;
   }
 
 
 
   /* Elements */
 
-  .icon-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    outline: none;
-    box-shadow: none;
-    border: none;
-  }
-
-  .gradient {
-    background: linear-gradient(to left,  #652ee9, #c75afe);
-    color: white;
-    /* border: #f5f5f5 1px solid;   */
-  }
-
-  .secondary {
-    background-color: #f8f8f8;
-    border: #f1f1f1 1px solid;
-  }
 
 
-  /* section spliter */
-  .section-spliter {
-    display: flex;
-    align-items: center;
-  }
-  .line {
-    width: 100%;
-    min-width: 300px;
-    /* max-width: 400px; */
-    height: 2px;
-    background-color: #f1f1f1;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .line2 {
-    width: 100%;
-    /* min-width: 200px; */
-    /* max-width: 400px; */
-    height: 3px;
-    background-color: #0f1637;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .text-gradient {
-    font-size: 48px; /* Adjust font size as needed */
-      background: linear-gradient(to left,  #652ee9, #c75afe);
-      -webkit-background-clip: text; /* For webkit browsers */
-      -webkit-text-fill-color: transparent; /* For webkit browsers */
-      background-clip: text; /* For non-webkit browsers */
-      color: transparent; /* Fallback for non-supporting browsers */
-  }
-
-  .main-head{
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-
-  .tab{
-    display: inline-block;
-    padding: 9px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 30px;
-  }
-  .tabs {
-    min-width: 270px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 40px;
-    margin: 0;
-    
-  }
-
-
-  /* images */
-
-  .image-container{
-    overflow: hidden;
-    border-radius: 20px;        
-    border: 1px solid #f1f1f1;
-  }
-
-  .framer-image{
-    width: 100% !important;
-    /* height: 100%; */
-    /* fill: cover; */
-   
-  }
-
-  /* badge */
-  .badge {
-    border-radius: 30px;
-    padding: 7px;
-    padding-right: 10px;
-    padding-left: 10px;
-    align-items: center;
-    background-color: #00072b;
-  }
