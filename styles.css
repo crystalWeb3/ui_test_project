@@ -17,6 +17,12 @@
     background-color: white;
     width: 100%;
   }
+
+  /* Page Container */
+
+  .page-container {
+    padding: 20px;
+  }
   
   .container {
     width: 100%;
@@ -33,8 +39,8 @@
   /* Main Content */
   .main-content {   
     
-    padding: 25px;
-    padding-top: 30px;
+    padding: 30px;
+    
     background-color: #f8f8f8;
     border-radius: 30px;
   }
@@ -42,8 +48,7 @@
   /* Header */
   .header {
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
     flex: 0 0 auto;
     width: 100%;
     justify-content: space-between;
@@ -115,6 +120,7 @@
 /* modify layout */
   .h-row{
     display: flex;
+    gap: 30px;
     
   }
 
