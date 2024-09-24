@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -65,7 +63,7 @@
   .header-right {
     display: flex;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     justify-content: center;
     position: relative;
     gap:10px;
