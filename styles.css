@@ -223,11 +223,11 @@
     background-color: white;
     color: #333;
     padding: 10px 20px;
-    margin: 1px;
+    margin: 3px;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
-    border: none;
+    border: 1px #cacaca solid;
     display: inline-block;
     border-radius: 20px;
   }
