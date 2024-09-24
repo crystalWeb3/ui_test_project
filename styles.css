@@ -246,7 +246,7 @@
   .card {
     background-color: white;
     padding: 10px;
-    padding-bottom: 20px;
+    
     border-radius: 30px;
     height: 300px;
     margin: 5px;
@@ -374,12 +374,13 @@
 
   .image-container{
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 20px;        
     border: 1px solid #f1f1f1;
   }
 
   .framer-image{
     width: 100% !important;
     /* height: 100%; */
-    fill: cover;
+    /* fill: cover; */
+   
   }
