@@ -1,0 +1,40 @@
+ 
+  /* Header */
+  .header {
+    display: flex;
+    
+    flex: 0 0 auto;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    position: relative;
+    animation: smooth 0.5s ease-in;
+  }
+  
+  .header-left{
+    /* float: left; */
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
+    justify-content: center;
+    position: relative;
+    gap:10px;
+  }
+  .header-right .btn-gradient {
+   
+    background: linear-gradient(135deg, #6c63ff 0%, #8963ff 100%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .header-right .btn-gradient:hover {
+    background: linear-gradient(135deg, #5144a3 0%, #6854d4 100%);
+  }
+  
