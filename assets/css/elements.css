@@ -67,7 +67,9 @@
   align-items: center;
   position: relative;
   color: #979797;
-  width: 500px;
+  width: 100%;
+  /* max-width: 500px; */
+  min-width: 500px;
   /* border-radius: 20px; */
 }
 
@@ -145,7 +147,7 @@
 .main-head {
   display: flex;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .tab {
@@ -199,6 +201,16 @@
         display: none;
     }
     .membership-btn {
+        display: none;
+    }
+    .main-head {
+        display: block;
+    }
+    .search-bar input {
+        width: 100%;
+        max-width: 100%;
+    }
+    .header-right {
         display: none;
     }
 }

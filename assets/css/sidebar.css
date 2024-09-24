@@ -8,7 +8,7 @@
     flex-direction: column;
     transition: 0.3s ease;
     border-radius: 20px;
-    height: calc(100% - 25px);
+    height: calc(100vh - 35px);
     /* position: sticky; */
     /* width: 22%; */
     
@@ -23,8 +23,9 @@
     top: 15px;
     /* background-color: white; */
     width: 30%;
+    max-width: 300px;
     transition: all ease 0.2s;
-    margin: 20px;
+    
   }
 
 
@@ -59,7 +60,7 @@
     color: #fff;
     /* font-size: 18px; */
     display: block;
-    padding: 10px;
+    padding: 7px;
     transition: 0.3s ease;
     border-radius: 10px;
     margin: 0;
@@ -101,7 +102,7 @@
   }
   
   .sidebar-links li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   
   .sidebar-links a {
@@ -116,21 +117,20 @@
   }
   
   .main-container {
-    width: 70%;
+    flex-flow: column;
+    flex: 1 0 0px;
+    overflow: visible;
+    padding: 10px;
   }
 
   @media screen and (max-width: 1200px) {
     .sidebar {
-        width: 100%;
-        height: auto;
+        width: 100%;        
         min-width: 80px;        
     }
-    .main-container {
-        width: 90%;
-        
-    }
+ 
     .sidebar-container {
-        width: 10%;
+        width: 100px;
         transition: all ease 0.2s;
     }
   }
