@@ -115,7 +115,8 @@
   }
   
   .footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #5144a3;
   }
   
   .footer-right {
