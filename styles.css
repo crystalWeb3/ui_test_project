@@ -245,11 +245,12 @@
   
   .card {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
     border-radius: 30px;
     height: 300px;
     margin: 5px;
-    text-align: center;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
@@ -366,4 +367,19 @@
     border-radius: 40px;
     margin: 0;
     
+  }
+
+
+  /* images */
+
+  .image-container{
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #f1f1f1;
+  }
+
+  .framer-image{
+    width: 100% !important;
+    /* height: 100%; */
+    fill: cover;
   }
