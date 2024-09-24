@@ -278,6 +278,7 @@
   border-radius: 10px;
   outline: none;
   border: none;
+  animation: smooth 0.7s ease-in;
 }
 
 /* Gap */

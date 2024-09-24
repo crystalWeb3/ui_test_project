@@ -103,7 +103,8 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;    
-    align-items: center;        
+    align-items: center;     
+    animation: smooth 0.5s ease-in;   
   }
   
   .footer a {
