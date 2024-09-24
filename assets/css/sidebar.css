@@ -27,6 +27,7 @@
     width: 30%;
     max-width: 300px;
     transition: all ease 0.2s;
+    animation: smooth 0.3s ease-in;
     
   }
 

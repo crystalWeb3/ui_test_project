@@ -176,6 +176,7 @@
 /* tags */
 .tags {
   /* margin-bottom: 20px; */
+  animation: smooth 0.5s ease-in;
 }
 
 .tag-btn {
@@ -203,6 +204,10 @@
 }
 
 /* Card Grid */
+
+.cards {
+    animation: smooth 0.7s ease-in;
+}
 
 .card {
   background-color: white;
@@ -232,6 +237,7 @@
 .main-head {
   display: flex;
   align-items: center;
+  animation: smooth 0.2s ease-in;
   /* width: 100%; */
 }
 
@@ -243,7 +249,16 @@
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 30px;
+  animation: smooth 0.4s ease-in;
 }
+
+@keyframes smooth {
+    from {
+        opacity: 0;
+    }
+    to{ opacity: 1;}
+}
+
 .tabs {
   min-width: 270px;
   padding: 5px;
@@ -251,6 +266,7 @@
   border-radius: 40px;
   border: 1px rgb(221, 221, 221) solid;
   margin: 0;
+  
 }
 
 /* Load More Button */
