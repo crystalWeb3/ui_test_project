@@ -40,9 +40,11 @@
   .main-content {   
     
     padding: 30px;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     background-color: #f8f8f8;
-    border-radius: 30px;
+    border-radius: 20px;
   }
   
   /* Header */
@@ -81,9 +83,10 @@
   }
   
  
-  .page-title {
-    font-size: 32px;
-    font-weight: bolder;
+  .page-title h3{
+    font-size: 38px !important;
+    font-weight: 700 !important;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     text-wrap: nowrap;
   }
   

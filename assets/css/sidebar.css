@@ -3,13 +3,15 @@
     width: 100%;
     background-color: #00072b;
     color: #fff;
-    padding: 20px;
+    padding: 20px 18px;
     display: flex;
+    justify-content: space-between;
+    /* gap: 25px; */
     flex-direction: column;
     transition: 0.3s ease;
     border-radius: 20px;
     height: calc(100vh - 35px);
-    /* position: sticky; */
+    position: relative;    
     /* width: 22%; */
     
   }
@@ -18,9 +20,9 @@
   .sidebar-container {
     
     /* min-height: 100%; */
-    height: 100vh;
+    height: 95vh;
     position: sticky;
-    /* top: 15px; */
+    top: 15px;
     /* background-color: white; */
     width: 30%;
     max-width: 300px;
@@ -28,11 +30,14 @@
     
   }
 
-
+  .sidebar-top {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+  }
 
   
-  .sidebar-header {    
-    margin-bottom: 30px;
+  .sidebar-header {        
     font-size: 24px;
     
   }
@@ -40,20 +45,20 @@
   .sidebar-menu {
     list-style: none;
     padding: 0;
-    flex-grow: 1;
-    align-items: center;
+    /* flex-grow: 1; */
+    /* align-items: center; */
   }
   .beta{
     font-size: 17px;
     font-weight: 300 !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* line-height: 1; */
-    vertical-align: top;
+    /* vertical-align: top; */
     color: #dbdbdb;
   }
   
   .sidebar-menu li {
-    margin: 5px 0;
+    /* margin: 5px 0; */
     display: block;
     /* display: flex; */
     /* align-items: center; */
@@ -64,31 +69,37 @@
     color: #fff;
     /* font-size: 18px; */
     display: block;
-    padding: 10px;
+    /* gap: 10px; */
+    padding: 10px 15px;
     transition: 0.3s ease;
     border-radius: 10px;
     
   }
   
   .sidebar-menu a:hover {
-    background: linear-gradient(to left,  #652ee9, #c75afe);
+    background-color: rgb(0, 14, 84);
+    transition: all 0.1s ease-in;
     border-radius: 10px;
   }
 
   .sidebar-menu a.active {    
     border-radius: 10px;
-    background: linear-gradient(to left,  #652ee9, #c75afe);
+    background: linear-gradient(to left,  #c75afe, #652ee9);
   }
   
   .sidebar-footer {
     margin-top: auto;
   }
+
+  .sidebar button {
+    margin: 0;
+  }
   
   .membership-btn {
-    background: linear-gradient(135deg, #6c63ff 0%, #8963ff 100%);
+    background: linear-gradient( #6c63ff 0%, #8963ff 100%);    
     color: white;
     width: 100%;
-    padding: 15px;
+    padding: 12px 15px;
     border: none;
     cursor: pointer;
     margin-bottom: 20px;
@@ -99,20 +110,26 @@
   .membership-btn:hover {
     background-color: #5755d9;
   }
+  .sidebar ul {
+    margin: 0;
+  }
   
   .sidebar-links {
     list-style: none;
     padding: 0;
+    
   }
   
   .sidebar-links li {
-    margin-bottom: 5px;
+    margin-bottom: 5px;    
   }
   
   .sidebar-links a {
     text-decoration: none;
     color: #aaa;
     font-size: 16px;
+    text-align: center;
+    
   }
   
   .sidebar-links a:hover {
@@ -125,7 +142,7 @@
     flex-flow: column;
     flex: 1 0 0px;
     overflow: visible;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: nowrap;
     justify-content: center;
     overflow: visible;
@@ -140,6 +157,23 @@
   .membership-btn {
     display: block;
   }
+
+
+  /* Logo */
+
+  .text-logo {
+    font-size: 22px !important;
+  }
+
+  /* Menu  */
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    gap: 10px;
+  }
+
   @media screen and (max-width: 1200px) {
     .sidebar {
         width: 100%;        
@@ -151,6 +185,10 @@
         transition: all ease 0.2s;
     }
     .sidebar-header {
+        text-align: center;
+    }
+
+    .sidebar-menu a {
         text-align: center;
     }
   }

@@ -17,6 +17,9 @@
   color: white;
   /* border: #f5f5f5 1px solid;   */
 }
+.gradient:hover {
+  background-color: #00072b;
+}
 
 .secondary {
   background-color: #f8f8f8;
@@ -30,27 +33,34 @@
   margin-right: 10px;
   color: #333;
 }
+.icon-btn:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 1px 2px 9px  4px rgba(0, 0, 0, 0.2);
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+    
+}
 
 /* section spliter */
 .section-spliter {
   display: flex;
   align-items: center;
-  font-size: small !important;
+  font-size: 14px !important;
 }
 .line {
   width: 100%;
   /* min-width: 300px; */
   /* max-width: 400px; */
-  height: 2px;
-  background-color: #f1f1f1;
-  /* margin-left: 20px;
-  margin-right: 20px; */
+  height: 1px;
+  background-color: #d8d8d8;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .line2 {
   width: 100%;
   /* min-width: 200px; */
   /* max-width: 400px; */
-  height: 2px;
+  height: 1px;
   background-color: #172155;
   
 }
@@ -90,16 +100,17 @@
 
 /* tags */
 .tags {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .tag-btn {
   /* background-color: #f1f1f1; */
   background-color: white;
   color: #333;
-  padding: 5px 10px;
+  padding: 8px 14px;
   margin: 3px;
   border-radius: 5px;
+  font-size: 14px !important;
   cursor: pointer;
   transition: background 0.3s ease;
   border: 1px #cacaca solid;
@@ -113,7 +124,7 @@
 }
 
 .tag-btn:hover {
-  background-color: #ddd;
+  background-color: #f5f5f5;
 }
 
 /* Card Grid */
@@ -136,7 +147,7 @@
 }
 
 .text-gradient {
-  font-size: 48px; /* Adjust font size as needed */
+  
   background: linear-gradient(to left, #652ee9, #c75afe);
   -webkit-background-clip: text; /* For webkit browsers */
   -webkit-text-fill-color: transparent; /* For webkit browsers */
@@ -164,6 +175,7 @@
   padding: 5px;
   background-color: white;
   border-radius: 40px;
+  border: 1px rgb(221, 221, 221) solid;
   margin: 0;
 }
 
@@ -191,6 +203,7 @@
   overflow: hidden;
   border-radius: 20px;
   border: 1px solid #f1f1f1;
+  font-size: 18px !important;
 }
 
 .framer-image {
@@ -218,9 +231,18 @@
 }
 
 .svg-header-container {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     display: inline-block;
+}
+
+
+/* Membership Button */
+
+.membership-btn {
+    background : linear-gradient(to right, rgb(61, 90, 241), rgb(203, 93, 255));
+    
+    
 }
 
 /* responsive */
@@ -233,7 +255,7 @@
     .sidebar-header span {
         display: none;
     }
-    .section-spliter p {
+    .section-spliter div {
         display: none;
     }
     .membership-btn span{
