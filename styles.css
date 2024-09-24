@@ -63,8 +63,12 @@
     /* float: left; */
   }
   .header-right {
-    /* display: flex; */
-    /* float: right; */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    gap:10px;
   }
   .header-right .btn-gradient {
    
@@ -97,19 +101,17 @@
     
   /* Footer */
   .footer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    position: sticky;
-    bottom: 0;
+    padding: 20px;    
+    align-items: center;        
   }
   
   .footer a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    font-size: 14px;
+    
   }
   
   .footer a:hover {
@@ -117,7 +119,15 @@
   }
   
   .footer-right {
-    text-align: right;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
   }
   
 /* modify layout */

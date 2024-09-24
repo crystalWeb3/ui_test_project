@@ -9,14 +9,23 @@
   display: inline-block;
   outline: none;
   box-shadow: none;
-  border: none;
 }
 
+/* gradients  */
 .gradient {
   background: linear-gradient(to left, #652ee9, #c75afe);
   color: white;
   /* border: #f5f5f5 1px solid;   */
 }
+
+.gradient-2 {
+  background: linear-gradient(to right, #00072b, #652ee9);
+  color: white;
+  border: #f1f1f1 1px solid;
+  padding: 13px 18px;
+  font-size: 16px !important;
+}
+
 .gradient:hover {
   background-color: #00072b;
 }
@@ -24,21 +33,42 @@
 .secondary {
   background-color: #f8f8f8;
   border: #f1f1f1 1px solid;
+  padding: 13px 18px;
+  font-size: 16px !important;
 }
 
 .icon-btn {
   background-color: #f1f1f1;
   padding: 10px;
   border-radius: 50%;
-  margin-right: 10px;
   color: #333;
 }
 .icon-btn:hover {
-    transform: translate(-4px, -4px);
-    box-shadow: 1px 2px 9px  4px rgba(0, 0, 0, 0.2);
-    transition: all ease-in 0.2s;
-    cursor: pointer;
-    
+  transform: translate(-4px, -4px);
+  box-shadow: 1px 2px 9px 4px rgba(0, 0, 0, 0.2);
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+}
+
+/* Bell Button */
+
+.bell-btn {
+  width: 42px;
+  height: 42px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.spot-red {
+  width: 4px;
+  height: 4px;
+  background-color: rgb(255, 0, 0);
+  position: absolute;
+  right: 15px;
+  top: 11px;
 }
 
 /* section spliter */
@@ -52,6 +82,7 @@
   /* min-width: 300px; */
   /* max-width: 400px; */
   height: 1px;
+  min-width: 20px;
   background-color: #d8d8d8;
   margin-left: 20px;
   margin-right: 20px;
@@ -62,7 +93,6 @@
   /* max-width: 400px; */
   height: 1px;
   background-color: #172155;
-  
 }
 
 /* Search Bar */
@@ -86,7 +116,7 @@
 .search-bar input {
   width: 100%;
   padding: 15px 20px;
-  
+
   background-color: #f8f8f8;
   border-radius: 20px;
   border: #f5f5f5 solid 1px;
@@ -147,7 +177,6 @@
 }
 
 .text-gradient {
-  
   background: linear-gradient(to left, #652ee9, #c75afe);
   -webkit-background-clip: text; /* For webkit browsers */
   -webkit-text-fill-color: transparent; /* For webkit browsers */
@@ -179,23 +208,21 @@
   margin: 0;
 }
 
-
 /* Load More Button */
 
 .btn-load {
-    background-color: rgb(68, 68, 68);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
+  background-color: rgb(68, 68, 68);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
 }
 
 /* Gap */
 .gap {
-    height: 20px;
+  height: 20px;
 }
-
 
 /* images */
 
@@ -224,62 +251,62 @@
 /* svg */
 
 .svg-container {
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    /* align-items: center; */
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  /* align-items: center; */
 }
 
 .svg-header-container {
-    width: 22px;
-    height: 22px;
-    display: inline-block;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
 }
-
 
 /* Membership Button */
 
 .membership-btn {
-    background : linear-gradient(to right, rgb(61, 90, 241), rgb(203, 93, 255));
-    
-    
+  background: linear-gradient(to right, rgb(61, 90, 241), rgb(203, 93, 255));
 }
 
 /* responsive */
 
-
 @media screen and (max-width: 1200px) {
-    .sidebar-menu span {
-        display: none;
-    }
-    .sidebar-header span {
-        display: none;
-    }
-    .section-spliter div {
-        display: none;
-    }
-    .membership-btn span{
-        display: none;
-    }
-    .main-head {
-        display: block;
-    }
-    
+  .sidebar-menu span {
+    display: none;
+  }
+  .sidebar-header span {
+    display: none;
+  }
+  .section-spliter div {
+    display: none;
+  }
+  .membership-btn span {
+    display: none;
+  }
+  .main-head {
+    display: block;
+  }
+  .line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-right {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .search-bar input {
-        width: 100%;
-        
-    }
-    .search-bar {
-        max-width: 100% !important;
-        width: 100%;
-    }
-    .header-left {
-        width: 100%;
-    }
-    .header-right {
-        display: none;
-    }
+  .search-bar input {
+    width: 100%;
+  }
+  .search-bar {
+    max-width: 100% !important;
+    width: 100%;
+  }
+  .header-left {
+    width: 100%;
+  }
 }
