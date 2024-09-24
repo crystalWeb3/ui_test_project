@@ -34,6 +34,7 @@
   .sidebar-header {    
     margin-bottom: 30px;
     font-size: 24px;
+    
   }
   
   .sidebar-menu {
@@ -45,12 +46,14 @@
   .beta{
     font-size: 20px;
     font-weight: 100 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* line-height: 1; */
     vertical-align: top;
   }
   
   .sidebar-menu li {
     margin: 5px 0;
+    display: block;
     /* display: flex; */
     /* align-items: center; */
   }
@@ -60,10 +63,10 @@
     color: #fff;
     /* font-size: 18px; */
     display: block;
-    padding: 7px;
+    padding: 10px;
     transition: 0.3s ease;
     border-radius: 10px;
-    margin: 0;
+    
   }
   
   .sidebar-menu a:hover {
@@ -123,6 +126,12 @@
     padding: 10px;
   }
 
+
+  /* Membership-btn */
+
+  .membership-btn {
+    display: block;
+  }
   @media screen and (max-width: 1200px) {
     .sidebar {
         width: 100%;        
@@ -132,5 +141,8 @@
     .sidebar-container {
         width: 100px;
         transition: all ease 0.2s;
+    }
+    .sidebar-header {
+        text-align: center;
     }
   }

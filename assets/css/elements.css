@@ -51,8 +51,7 @@
   /* max-width: 400px; */
   height: 3px;
   background-color: #0f1637;
-  margin-left: 20px;
-  margin-right: 20px;
+  
 }
 
 /* Search Bar */
@@ -97,7 +96,7 @@
   /* background-color: #f1f1f1; */
   background-color: white;
   color: #333;
-  padding: 10px 20px;
+  padding: 5px 10px;
   margin: 3px;
   border-radius: 5px;
   cursor: pointer;
@@ -188,6 +187,22 @@
   align-items: center;
   background-color: #00072b;
 }
+/* svg */
+
+.svg-container {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    /* align-items: center; */
+}
+
+.svg-header-container {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+/* responsive */
 
 
 @media screen and (max-width: 1200px) {
@@ -200,7 +215,7 @@
     .section-spliter h6 {
         display: none;
     }
-    .membership-btn {
+    .membership-btn span{
         display: none;
     }
     .main-head {
