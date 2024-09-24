@@ -38,12 +38,12 @@
 }
 .line {
   width: 100%;
-  min-width: 300px;
+  /* min-width: 300px; */
   /* max-width: 400px; */
   height: 2px;
   background-color: #f1f1f1;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
 }
 .line2 {
   width: 100%;
@@ -186,3 +186,16 @@
   align-items: center;
   background-color: #00072b;
 }
+
+/* 
+@media screen and (max-width: 1200px) {
+    .sidebar-menu span {
+        display: none;
+    }
+    .sidebar-header span {
+        display: none;
+    }
+    .section-spliter h6 {
+        display: none;
+    }
+} */
