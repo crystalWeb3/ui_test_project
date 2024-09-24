@@ -1,6 +1,6 @@
 /* Sidebar */
 .sidebar {
-    
+    width: 100%;
     background-color: #00072b;
     color: #fff;
     padding: 20px;
@@ -21,7 +21,10 @@
     height: 100vh;
     position: sticky;
     top: 15px;
-    background-color: white;
+    /* background-color: white; */
+    width: 30%;
+    transition: all ease 0.2s;
+    margin: 20px;
   }
 
 
@@ -112,11 +115,22 @@
     text-decoration: underline;
   }
   
+  .main-container {
+    width: 70%;
+  }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .sidebar {
         width: 100%;
         height: auto;
+        min-width: 80px;        
+    }
+    .main-container {
+        width: 90%;
         
+    }
+    .sidebar-container {
+        width: 10%;
+        transition: all ease 0.2s;
     }
   }
