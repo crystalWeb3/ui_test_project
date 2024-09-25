@@ -163,7 +163,7 @@
   padding: 15px 20px;
   transition: all ease-in 0.2s;
   background-color: #f8f8f8;
-  border-radius: 20px;
+  border-radius: 30px;
   border: #f5f5f5 solid 1px;
   outline: none;
   font-size: 14px;
@@ -227,11 +227,11 @@
 }
 
 .text-gradient {
-  background: linear-gradient(to left, #652ee9, #c75afe);
-  -webkit-background-clip: text; /* For webkit browsers */
-  -webkit-text-fill-color: transparent; /* For webkit browsers */
-  background-clip: text; /* For non-webkit browsers */
-  color: transparent; /* Fallback for non-supporting browsers */
+  background: linear-gradient(to left, #c75afe, #652ee9);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;  
+  color: transparent; 
 }
 
 .main-head {
@@ -260,8 +260,8 @@
 }
 
 .tabs {
-  min-width: 270px;
-  padding: 5px;
+  min-width: 280px;
+  padding: 10px;
   background-color: white;
   border-radius: 40px;
   border: 1px rgb(221, 221, 221) solid;
@@ -274,10 +274,11 @@
 .btn-load {
   background-color: rgb(68, 68, 68);
   color: white;
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
   outline: none;
   border: none;
+  height: 40px;
   animation: smooth 0.7s ease-in;
 }
 
@@ -323,6 +324,7 @@
   width: 22px;
   height: 22px;
   display: inline-block;
+  line-height: 1;
 }
 
 /* Membership Button */

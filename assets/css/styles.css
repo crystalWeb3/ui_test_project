@@ -1,73 +1,66 @@
+/* Import Fonts */
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Import Other Css */
+@import url("./sidebar.css");
+@import url("./elements.css");
+@import url("./footer.css");
+@import url("./header.css");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  html {
-    border: 0;
-    padding: 0;
-    width: 100%;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    width: 100%;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  border: 0;
+  padding: 0;
+  width: 100%;
+}
 
-  /* Page Container */
+body {
+  font-family: "Satoshi", sans-serif;
+  background-color: white;
+  width: 100%;
+}
 
-  .page-container {
-    padding: 20px;
-  }
-  
-  .container {
-    width: 100%;
-    min-width: 100%;
-    display: flex;
-    /* min-height: 100vh; */
-    background-color: white;
-    margin: 0;
-    padding: 0;
+/* Page Container */
 
-  }
+.page-container {
+  padding: 20px;
+}
 
-  
-  /* Main Content */
-  .main-content {   
-    
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: #f8f8f8;
-    border-radius: 20px;
-  }
- 
- 
-  .page-title h3{
-    font-size: 38px !important;
-    font-weight: 700 !important;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    text-wrap: nowrap;
-  }
-  
-  .page-title .highlight {
-    color: #6c63ff;
-  }
- 
-  
+.container {
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  /* min-height: 100vh; */
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Content */
+.main-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+}
+
+.page-title h3 {
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  text-wrap: nowrap;
+}
+
+.page-title .highlight {
+  color: #6c63ff;
+}
+
 /* modify layout */
-  .h-row{
-    display: flex;
-    gap: 30px;
-    
-  }
-
-
-
-  /* Elements */
-
-
-
+.h-row {
+  display: flex;
+  gap: 30px;
+}

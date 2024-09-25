@@ -1,195 +1,202 @@
 /* Sidebar */
 .sidebar {
+  width: 100%;
+  background-color: #00072b;
+  color: #fff;
+  padding: 20px 18px;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 25px; */
+  flex-direction: column;
+  transition: 0.3s ease;
+  border-radius: 20px;
+  height: calc(100vh - 35px);
+  position: relative;
+  /* width: 22%; */
+}
+
+.sidebar-container {
+  /* min-height: 100%; */
+  height: 95vh;
+  position: sticky;
+  top: 15px;
+  /* background-color: white; */
+  width: 30%;
+  max-width: 300px;
+  transition: all ease 0.2s;
+  animation: smooth 0.3s ease-in;
+}
+
+.sidebar-top {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: auto;
+  height: min-content;
+  width: 100%;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  /* flex-grow: 1; */
+  /* align-items: center; */
+}
+.beta {
+  font-size: 16px;
+  font-weight: 700 !important;
+
+  /* line-height: 1; */
+  /* vertical-align: top; */
+  color: #dbdbdb;
+}
+
+.sidebar-menu li {
+  /* margin: 5px 0; */
+  display: block;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: #fff;
+  /* font-size: 18px; */
+  display: block;
+  /* gap: 10px; */
+  padding: 9px 15px;
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+
+.sidebar-menu a:hover {
+  background-color: rgb(0, 14, 84);
+  transition: all 0.1s ease-in;
+  border-radius: 10px;
+}
+
+.sidebar-menu a.active {
+  border-radius: 10px;
+  background: linear-gradient(to left, #c75afe, #652ee9);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.sidebar button {
+  margin: 0;
+}
+
+.membership-btn {
+  background: linear-gradient(#6c63ff 0%, #8963ff 100%);
+  color: white;
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.membership-btn:hover {
+  background-color: #5755d9;
+}
+.sidebar ul {
+  margin: 0;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 5px;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 16px;
+  text-align: center;
+}
+
+.sidebar-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.main-container {
+  align-items: flex-start;
+  flex-flow: column;
+  flex: 1 0 0px;
+  overflow: visible;
+  gap: 50px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+  display: flex;
+  /* padding: 10px; */
+}
+
+/* Membership-btn */
+
+.membership-btn {
+  display: block;
+}
+
+/* Logo */
+
+.text-logo {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  max-height: 30.8px;
+  /* line-height: 1.4em; */
+}
+
+/* Menu  */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: relative;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
     width: 100%;
-    background-color: #00072b;
-    color: #fff;
-    padding: 20px 18px;
-    display: flex;
-    justify-content: space-between;
-    /* gap: 25px; */
-    flex-direction: column;
-    transition: 0.3s ease;
-    border-radius: 20px;
-    height: calc(100vh - 35px);
-    position: relative;    
-    /* width: 22%; */
-    
+    min-width: 80px;
   }
 
-    
   .sidebar-container {
-    
-    /* min-height: 100%; */
-    height: 95vh;
-    position: sticky;
-    top: 15px;
-    /* background-color: white; */
-    width: 30%;
-    max-width: 300px;
+    width: 100px;
     transition: all ease 0.2s;
-    animation: smooth 0.3s ease-in;
-    
   }
 
-  .sidebar-top {
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
+  .beta {
+    display: none;
   }
-
-  
-  .sidebar-header {        
-    font-size: 24px;
-    
-  }
-  
-  .sidebar-menu {
-    list-style: none;
-    padding: 0;
-    /* flex-grow: 1; */
-    /* align-items: center; */
-  }
-  .beta{
-    font-size: 17px;
-    font-weight: 300 !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* line-height: 1; */
-    /* vertical-align: top; */
-    color: #dbdbdb;
-  }
-  
-  .sidebar-menu li {
-    /* margin: 5px 0; */
-    display: block;
-    /* display: flex; */
-    /* align-items: center; */
-  }
-  
-  .sidebar-menu a {
-    text-decoration: none;
-    color: #fff;
-    /* font-size: 18px; */
-    display: block;
-    /* gap: 10px; */
-    padding: 10px 15px;
-    transition: 0.3s ease;
-    border-radius: 10px;
-    
-  }
-  
-  .sidebar-menu a:hover {
-    background-color: rgb(0, 14, 84);
-    transition: all 0.1s ease-in;
-    border-radius: 10px;
-  }
-
-  .sidebar-menu a.active {    
-    border-radius: 10px;
-    background: linear-gradient(to left,  #c75afe, #652ee9);
-  }
-  
-  .sidebar-footer {
-    margin-top: auto;
-  }
-
-  .sidebar button {
-    margin: 0;
-  }
-  
-  .membership-btn {
-    background: linear-gradient( #6c63ff 0%, #8963ff 100%);    
-    color: white;
-    width: 100%;
-    padding: 12px 15px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    transition: 0.3s ease;
-  }
-  
-  .membership-btn:hover {
-    background-color: #5755d9;
-  }
-  .sidebar ul {
-    margin: 0;
-  }
-  
-  .sidebar-links {
-    list-style: none;
-    padding: 0;
-    
-  }
-  
-  .sidebar-links li {
-    margin-bottom: 5px;    
-  }
-  
-  .sidebar-links a {
-    text-decoration: none;
-    color: #aaa;
-    font-size: 16px;
-    text-align: center;
-    
-  }
-  
-  .sidebar-links a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  .main-container {
-    align-items: flex-start;
-    flex-flow: column;
-    flex: 1 0 0px;
-    overflow: visible;
-    gap: 50px;
-    flex-wrap: nowrap;
-    justify-content: center;
-    overflow: visible;
-    position: relative;
-    display: flex;
-    /* padding: 10px; */
-  }
-
-
-  /* Membership-btn */
-
-  .membership-btn {
-    display: block;
-  }
-
-
-  /* Logo */
-
   .text-logo {
-    font-size: 22px !important;
+    display: none;
   }
-
-  /* Menu  */
-  .menu-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: relative;
-    gap: 10px;
+  .sidebar-header {
+    /* text-align: center; */
+    justify-content: center;
   }
-
-  @media screen and (max-width: 1200px) {
-    .sidebar {
-        width: 100%;        
-        min-width: 80px;        
-    }
- 
-    .sidebar-container {
-        width: 100px;
-        transition: all ease 0.2s;
-    }
-    .sidebar-header {
-        text-align: center;
-    }
-
-    .sidebar-menu a {
-        text-align: center;
-    }
+  .sidebar-menu a {
+    text-align: center;
   }
+}
